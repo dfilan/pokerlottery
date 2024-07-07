@@ -13,6 +13,7 @@ def test_memorized_values():
 
 
 def test_distribution():
+    random.seed("test_distribution")
     num_trials = 30_000
     num_alice = 0
     num_bob = 0

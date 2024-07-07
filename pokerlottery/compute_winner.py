@@ -19,7 +19,7 @@ def compute_winner(info_array):
     info_array.sort(key=lambda x: x['name'])
     seed = ''.join([info['name'] + info['lucky_word'] + str(info['chip_count'])
                     for info in info_array])
-    random.seed(seed)
+    random.seed(seed, version=2)
     # select a random chip
     total_chips = sum([info['chip_count'] for info in info_array])
     rand_num = random.random()
