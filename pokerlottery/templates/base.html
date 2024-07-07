@@ -1,0 +1,33 @@
+<!doctype html>
+<title>{% block title %}{% endblock %} - Poker lottery</title>
+<!-- <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> -->
+<style>
+  /* stolen from bestmotherfucking.website */
+  body{
+      margin:1em auto;
+      max-width:40em;
+      padding:0 .62em 3.24em;
+      font:1.2em/1.62 sans-serif
+  }
+  h1,h2,h3 {
+      line-height:1.2
+  }
+  @media print{
+      body{
+	  max-width:none
+      }
+  }
+</style>
+<nav>
+  <h1>Poker lottery</h1>
+  <ul>
+    <li><a href="https://axrp.net">AXRP Home</a></li>
+  </ul>
+</nav>
+<section class="content">
+  <header>{% block header %}{% endblock %}</header>
+  {% for message in get_flashed_messages() %}
+  <div class="flash">{{ message }}</div>
+  {% endfor %}
+  {% block content %}{% endblock %}
+</section>
