@@ -14,3 +14,8 @@ Nice-to-haves:
 - Explain how you would use this website
 - About page containing FAQs etc
 - send user a URL to reproduce the inputs and outputs
+
+This project was made with:
+- The python programming language
+- Flask, as a backbone
+- hosted on render

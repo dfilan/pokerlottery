@@ -24,6 +24,7 @@ def create_app(test_config=None):
         pass
 
     # a simple page that says hello
+    # TODO: if I delete this, change test_factory.py accordingly
     @app.route('/hello')
     def hello():
         return 'Hello, World!'
