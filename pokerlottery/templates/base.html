@@ -2,7 +2,7 @@
 <title>{% block title %}{% endblock %} - Poker lottery</title>
 <!-- <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> -->
 <style>
-  /* stolen from bestmotherfucking.website */
+  /* stolen from bestmotherfucking.website, then modified a bit */
   body{
       margin:1em auto;
       max-width:40em;
@@ -16,6 +16,15 @@
       body{
 	  max-width:none
       }
+  }
+  .line_wrapper {
+      display: flex
+  }
+  input[type="text"] {
+      width:10em
+  }
+  input[type="number"] {
+      width:10em
   }
 </style>
 <nav>

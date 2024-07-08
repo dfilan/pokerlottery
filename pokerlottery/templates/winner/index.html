@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block header %}
+<h1>{% block title %}Winner{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<p>The winner of this game was {{ winner }}.</p>
+<p>To recap, the players, chip counts, and lucky words were:</p>
+<ul>
+  {% for info in info_array %}
+  <li>{{ info['name'] }}: {{ info['chip_count'] }} chips, "{{ info['lucky_word'] }}"</li>
+  {% endfor %}
+</ul>
+{% endblock %}

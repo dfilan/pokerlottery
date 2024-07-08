@@ -6,4 +6,17 @@
 
 {% block content %}
 <p>Hello this is the home page, the index if you will. Below is a magic form where you can fill stuff out.</p>
+<form method="post"> <!-- I can add an "action url" that would post somewhere other than 'index' -->
+  {% for i in range(6) %}
+  <div class="line-wrapper">
+    <label for="name{{ i }}">Name:</label>
+    <input type="text" id="name{{ i }}" name="name{{ i }}" required>
+    <label for="chip_count{{ i }}">Chip count:</label>
+    <input type="number" id="chip_count{{ i }}" name="chip_count{{ i }}" required>
+    <label for="lucky_word{{ i }}">Lucky word:</label>
+    <input type="text" id="lucky_word{{ i }}" name="lucky_word{{ i }}" required>
+  </div>
+  {% endfor %}
+  <button type="submit">Submit</button>
+</form>
 {% endblock %}
