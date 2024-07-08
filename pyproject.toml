@@ -5,7 +5,7 @@ description = "Pick a pseudo-random winner in proportion to chip count."
 dependencies = [
     "flask",
 ]
-requires-python = ">= 3.12"
+requires-python = ">= 3.11"
 authors = [
     { name = "Daniel Filan", email = "df@danielfilan.com" }
 ]
