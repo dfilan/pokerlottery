@@ -5,7 +5,8 @@ Basically a pseudorandom, reproducible way to turn poker into a lottery.
 Takes people's names, chip totals, and "lucky words" (aka seed components of the prng). Sorts the array of (name, chips, lucky word) alphabetically by name. Concatenates that all, uses that as a seed for python's random.random. Then picks a name with probability proportional to chip count.
 
 TODOs:
-- figure out how to let the user select how many lines to fill out - this probably involves react somehow
+- deal with the user not filling out enough lines
+- figure out how to let the user select how many lines to fill out - this probably involves react somehow (actually BenWR points out I could just do it serverside...)
 
 Nice-to-haves:
 - Explain how you would use this website

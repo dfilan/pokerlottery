@@ -10,6 +10,8 @@ def index():
         info_array = []
         # TODO rewrite this logic
         # in particular what if there aren't exactly 6 players
+        # also: maybe separate out a thing so that you can do something like a 'post' just by going to a URL
+        # so maybe it's not actually a post request, but a get request with a query string?
         for i in range(6):
             name = request.form[f'name{i}']
             lucky_word = request.form[f'lucky_word{i}']
