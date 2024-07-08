@@ -7,6 +7,7 @@ Takes people's names, chip totals, and "lucky words" (aka seed components of the
 TODOs:
 - deal with the user not filling out enough lines
 - figure out how to let the user select how many lines to fill out - this probably involves react somehow (actually BenWR points out I could just do it serverside...)
+- sanitize inputs, probably that's important
 
 Nice-to-haves:
 - Explain how you would use this website
@@ -17,4 +18,4 @@ Nice-to-haves:
 This project was made with:
 - The python programming language
 - Flask, as a backbone
-- hosted on render (maybe in the future)
+- hosted on render (now at pokerlottery.onrender.com!)
