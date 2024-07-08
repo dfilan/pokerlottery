@@ -7,8 +7,7 @@ Takes people's names, chip totals, and "lucky words" (aka seed components of the
 NB I should make sure to use random.random for stability across python versions.
 
 TODOs:
-- get python prng functionality working
-- figure out how get that info in a form, send it back to the user
+- figure out how get that info in a form, send it back to the user - this probably involves "react"?
 
 Nice-to-haves:
 - Explain how you would use this website
